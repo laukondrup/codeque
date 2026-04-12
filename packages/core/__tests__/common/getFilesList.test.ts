@@ -356,7 +356,6 @@ it.skip('should return files for project root ignored by parent gitignore, but i
 it('should ignore files from parent .gitignore', async () => {
   mockFs({
     [root]: {
-      '.git': {},
       project: {
         'fileA.ts': 'content',
         'fileB.js': 'content',

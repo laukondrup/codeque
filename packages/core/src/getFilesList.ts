@@ -298,7 +298,7 @@ export const getFilesList = async ({
               isFile: stat.isFile(),
               isDirectory: stat.isDirectory(),
             }
-          } catch (e) {
+          } catch (_e) {
             return {
               absolutePath,
               size: -1,
